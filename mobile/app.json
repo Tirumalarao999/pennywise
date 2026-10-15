@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Pennywise",
+    "slug": "pennywise-finance-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": { "backgroundColor": "#f6f7fb" },
+    "ios": { "supportsTablet": true },
+    "android": { "adaptiveIcon": { "backgroundColor": "#7161d6" } }
+  }
+}
