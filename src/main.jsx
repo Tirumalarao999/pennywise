@@ -51,6 +51,8 @@ function App() {
     const numericAmount = Number(amount);
     if (!Number.isFinite(numericAmount) || numericAmount <= 0) return setError('Enter an amount greater than zero.');
     if (!category || !date) return setError('Choose a category and date.');
+    const availableCents = Math.round((summary.income - summary.expense) * 100);
+    if (type === 'expense' && Math.round(numericAmount * 100) > availableCents) return setError(`Expense exceeds your available balance of ${money(Math.max(0, availableCents) / 100)}.`);
     save([{ id: `${Date.now()}-${Math.random().toString(16).slice(2)}`, type, amount: Math.round(numericAmount * 100) / 100, category, date, note: note.trim() }, ...transactions]);
     setAmount(''); setNote('');
   }
