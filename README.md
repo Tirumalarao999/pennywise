@@ -14,7 +14,7 @@ A personal finance tracker with web and mobile apps. Users sign in with a one-ti
 ## Tech stack
 
 - Web: React 19 and Vite
-- Mobile: React Native and Expo
+- Mobile: Expo SDK 57, React Native 0.86, and React 19.2
 - Authentication and database: Supabase Auth and Postgres
 - Mobile session storage: AsyncStorage
 - JavaScript with npm
@@ -53,7 +53,7 @@ npm install
 npm start
 ```
 
-Open the app in Expo Go or an Android/iOS simulator. For a phone on the same Wi-Fi network, use `npx expo start --host lan`.
+Open the app in Expo Go or an Android/iOS simulator. For a phone on the same Wi-Fi network, run `npm start -- --host lan` from the `mobile` directory.
 
 ## Netlify
 

@@ -5,8 +5,19 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "splash": { "backgroundColor": "#f6f7fb" },
-    "ios": { "supportsTablet": true },
-    "android": { "adaptiveIcon": { "backgroundColor": "#7161d6" } }
+    "splash": {
+      "backgroundColor": "#f6f7fb"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#7161d6"
+      }
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
   }
 }
