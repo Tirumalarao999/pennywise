@@ -4,3 +4,6 @@ dist/
 web-build/
 data/*.db
 npm-debug.log*
+.env
+.env.*
+!.env.example
